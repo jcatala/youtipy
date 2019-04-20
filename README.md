@@ -1,3 +1,4 @@
+# youtiPy
 # Easy (or not) py(music)player :musical_note: 
 
 Here's a little program that allows you play songs (or anything) from YT via CLI
@@ -25,8 +26,8 @@ Any new idea or request, just ask me please :D
 	* `colorama`
 
 * Clone & run
-    * `git clone URL`
-    * `cd URL` 
+    * `git clone https://github.com/jcatala/youtipy`
+    * `cd youtipy` 
     * `python3 main.py`
 
 
