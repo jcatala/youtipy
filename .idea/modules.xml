@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/easy-pyplayer.iml" filepath="$PROJECT_DIR$/.idea/easy-pyplayer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/youtipy.iml" filepath="$PROJECT_DIR$/.idea/youtipy.iml" />
     </modules>
   </component>
 </project>
