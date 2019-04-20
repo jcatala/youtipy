@@ -1,7 +1,7 @@
 # youtiPy
 # Easy (or not) py(music)player :musical_note: 
 
-Here's a little program that allows you play songs (or anything) from YT via CLI
+Here's a little program that allows you to play songs (or anything) from YT via CLI
 
 # Why ? 
 
@@ -20,7 +20,6 @@ Any new idea or request, just ask me please :D
 * Dependencies:
 	* `vlc player`
 	* `pafy`
-	* `subprocess` 	
 	* `bs4 (BeautifulSoup)`
 	* `requests`
 	* `colorama`
@@ -28,6 +27,7 @@ Any new idea or request, just ask me please :D
 * Clone & run
     * `git clone https://github.com/jcatala/youtipy`
     * `cd youtipy` 
+    * `pip3 install -r requeriments --user`
     * `python3 main.py`
 
 

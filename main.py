@@ -1,12 +1,11 @@
-from pydub import AudioSegment
-from pydub.playback import play
-import pafy
 import search_pyplayer
+import banners
 import audio_stream
+
+
 from colorama import Fore, Back, Style
 import sys
 import subprocess
-import banners
 
 
 

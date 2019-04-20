@@ -1,6 +1,4 @@
 import threading
-#from pydub import AudioSegment
-#from pydub.playback import play
 import subprocess
 import pafy
 

@@ -1,0 +1,4 @@
+colorama
+pafy
+bs4
+requests
