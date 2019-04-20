@@ -13,10 +13,12 @@ import banners
 
 custom_player = audio_stream.Player()
 last_search = dict()
+banners.print_banner()
 while True:
     try:
         cmd = input("$ >> ")
         if cmd == "help" or cmd == "h":
+            banners.print_banner()
             print ("List of commands:\n\thelp: show this info message)")
             print ("\tsearch <query> : Search for \"query\" keyword on youtube")
             print ("\tadd <id> : Download the previusly searched \"id\" and add it to the queue")
