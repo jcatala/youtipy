@@ -62,6 +62,11 @@ Any new idea or request, just ask me please :D
 		```python
 		$ >> next
 		```
+	* pause / resume the current song:
+		```python
+		$ >> pause
+		$ >> resume
+		```
     * Quit:
         ```python
         $ >> quit
