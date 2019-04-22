@@ -95,6 +95,13 @@ class Player:
     def check_current(self):
         return self.nowplaying
 
+    def pause_resume(self):
+        try:
+            subprocess.Popen("dbus-send --type=method_call --dest=org.mpris.MediaPlayer2.vlc /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause",shell=True)
+            time.sleep(1)
+            print("Paused / Resumed ...")
+        except:
+            print("Need \"dbus-send\" for pause the music :D ")
 
 
 

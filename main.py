@@ -25,6 +25,7 @@ while True:
             print ("\tplay <name> : Same as \"fadd\"")
             print ("\tqueue : Show the currently queue")
             print ("\tnext : Skip the current song")
+            print("\tpause / resume: To pause or resume the player")
             print("\tq : quit")
         if "search" in cmd:
             result = search_pyplayer.search(cmd.strip().split("search ")[1])
@@ -62,6 +63,8 @@ while True:
                     else:
                         print("\t" * c + Fore.GREEN + " --> " + k[0])
                     c += 1
+        elif "pause" in cmd or "resume" in cmd:
+            custom_player.pause_resume()
 
         elif "exit" in cmd or "q" == cmd or "quit" in cmd:
             print("Closing, please wait ...")
