@@ -26,8 +26,11 @@ Any new idea or request, just ask me please :D
 
 * Clone & run
     * `git clone https://github.com/jcatala/youtipy`
-    * `cd youtipy` 
-    * `pip3 install -r requeriments --user`
+    * `cd youtipy`
+	* for vlc:  
+		* `sudo pacman -S vlc` arch
+		* `apt install vlc` debian
+    * `pip3 install -r requeriments.txt --user`
     * `python3 main.py`
 
 
