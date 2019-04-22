@@ -23,6 +23,7 @@ Any new idea or request, just ask me please :D
 	* `bs4 (BeautifulSoup)`
 	* `requests`
 	* `colorama`
+	* `youtube-dl`
 
 * Clone & run
     * `git clone https://github.com/jcatala/youtipy`
