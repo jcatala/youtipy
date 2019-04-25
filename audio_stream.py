@@ -1,6 +1,5 @@
 import threading
 import subprocess
-import pafy
 
 import time
 
@@ -61,11 +60,13 @@ class Player:
         self.scheduler = Scheduler(self)
         self.scheduler.start()
     def next(self):
+        # PAFY GETS BROKEN DUNNO WHY for the moment just get the video id from the URL !
         if len(self.queue) > 0:
             subprocess.Popen("kill $(pidof vlc) > /dev/null 2>&1", shell=True)   # Kill any instance of vlc for the next song
             popped = self.queue.pop(0)
-            audio = pafy.new(url=popped[1])
-            self.pid = subprocess.Popen("cvlc --novideo --play-and-exit https://www.youtube.com/embed/" + audio.videoid + " 2> /dev/null", shell=True)
+            video_id = popped[1].split("v=")[1]
+            #audio = pafy.new(url=popped[1])
+            self.pid = subprocess.Popen("cvlc --novideo --play-and-exit https://www.youtube.com/embed/" + video_id + " 2> /dev/null", shell=True)
             self.nowplaying = popped[0]
             print("Now playing: ", self.nowplaying)
             time.sleep(1)
