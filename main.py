@@ -42,7 +42,6 @@ while True:
         elif "play" in cmd:
             song_name = cmd.split("play ")[1]
             result = search_pyplayer.search(song_name)
-            #print(result[0])
             custom_player.add_to_queue(result[0])
         elif "fadd" in cmd:
             song_name = cmd.split("fadd ")[1]

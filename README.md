@@ -19,7 +19,6 @@ Any new idea or request, just ask me please :D
 
 * Dependencies:
 	* `vlc player`
-	* `pafy`
 	* `bs4 (BeautifulSoup)`
 	* `requests`
 	* `colorama`
