@@ -66,7 +66,7 @@ class Player:
             popped = self.queue.pop(0)
             video_id = popped[1].split("v=")[1]
             #audio = pafy.new(url=popped[1])
-            self.pid = subprocess.Popen("cvlc --novideo --play-and-exit https://www.youtube.com/embed/" + video_id + " 2>&1 1>/dev/null", shell=True)
+            self.pid = subprocess.Popen("cvlc --quiet --novideo --play-and-exit https://www.youtube.com/embed/" + video_id, shell=True,stdout=subprocess.DEVNULL, stderr=subprocess.STDOUT)
             self.nowplaying = popped[0]
             print("Now playing: ", self.nowplaying)
             time.sleep(1)
