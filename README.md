@@ -76,8 +76,9 @@ Any new idea or request, just ask me please :D
 # Troubleshooting
 
 * My music is not being played, This sucks! :
-	* Try to check if cvlc lets you to stream any video, sometimes the lua script is outdated and crash with larger streams, if that is the case, do the following:
-	copy the content of this [file](http://git.videolan.org/?p=vlc.git;a=blob_plain;f=share/lua/playlist/youtube.lua;hb=HEAD) in to:
-	`/usr/lib64/vlc/lua/playlist/youtube.luac (arch)`
-	`/usr/lib/i386-linux-gnu/vlc/lua/playlist/youtube.luac (ubuntu x86)`
+	* Try to check if cvlc lets you to stream any video, sometimes the lua script is outdated and crash with larger streams, if that is the case, do the following:  
+
+		* copy the content of this [file](http://git.videolan.org/?p=vlc.git;a=blob_plain;f=share/lua/playlist/youtube.lua;hb=HEAD) in to:  
+		* `/usr/lib64/vlc/lua/playlist/youtube.luac (arch)`  
+		* `/usr/lib/i386-linux-gnu/vlc/lua/playlist/youtube.luac (ubuntu x86)`  
 	Then, try again :D !
