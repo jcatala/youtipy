@@ -51,7 +51,7 @@ while True:
             #custom_player.next()
             print("Skipping ... ")
             custom_player.force_next()
-        elif "queue" in cmd:
+        elif "queue" in cmd or "q" == cmd:
             print ("Current playing: ", custom_player.check_current())
             if len(custom_player.check_queue()) == 0:
                 print(Fore.RED + "Empty queue ")
@@ -66,7 +66,7 @@ while True:
         elif "pause" in cmd or "resume" in cmd:
             custom_player.pause_resume()
 
-        elif "exit" in cmd or "q" == cmd or "quit" in cmd:
+        elif "exit" in cmd or "quit" in cmd:
             print("Closing, please wait ...")
             break
         print(Style.RESET_ALL)
