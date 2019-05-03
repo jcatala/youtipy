@@ -21,8 +21,7 @@ while True:
             print ("List of commands:\n\thelp: show this info message)")
             print ("\tsearch <query> : Search for \"query\" keyword on youtube")
             print ("\tadd <id> : Download the previusly searched \"id\" and add it to the queue")
-            print ("\tfadd <name> : Force to add the first result of the queue with \"name\"")
-            print ("\tplay <name> : Same as \"fadd\"")
+            print ("\tplay <name> : Force to add the first result of \"name\" to the queue ")
             print ("\tqueue : Show the currently queue")
             print ("\tnext : Skip the current song")
             print("\tpause / resume: To pause or resume the player")
@@ -42,10 +41,6 @@ while True:
         elif "play" in cmd:
             song_name = cmd.split("play ")[1]
             result = search_pyplayer.search(song_name)
-            custom_player.add_to_queue(result[0])
-        elif "fadd" in cmd:
-            song_name = cmd.split("fadd ")[1]
-            result = search_pyplayer.search(song_name[1])
             custom_player.add_to_queue(result[0])
         elif "next" in cmd:
             #custom_player.next()
