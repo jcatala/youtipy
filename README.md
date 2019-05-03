@@ -15,6 +15,12 @@ Maybe its not the best implementation of the idea, but works for me, and I hope 
 
 Any new idea or request, just ask me please :D
 
+
+# Contents:
+* [Installation](https://github.com/jcatala/youtipy#installation)
+* [Usage examples](https://github.com/jcatala/youtipy#usage)
+* [TroubleShooting](https://github.com/jcatala/youtipy#troubleshooting)
+
 # Installation:
 
 * Dependencies:
@@ -35,7 +41,7 @@ Any new idea or request, just ask me please :D
 
 
 
-* Usage example:
+# Usage example:
 	* start the program:
 		```bash
 		python3 main.py 
