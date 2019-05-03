@@ -59,8 +59,6 @@ Any new idea or request, just ask me please :D
 * add song just with the name:
 	```python
 	$ >> play rick astley never gonna give you up
-	# or
-	$ >> fadd rick astley never gonna give you up
 	```
 * print the current queue:
 	```python
